@@ -116,8 +116,7 @@ visibility: visible;
 
 .bubble
 {
-	display: flex;
-	justify-content: center;
+	margin: 0 auto;
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
@@ -142,7 +141,7 @@ visibility: visible;
 
 .bubble-text p
 {
-	text-align: justify;
+	text-align: center;
 }
 
 
@@ -197,6 +196,7 @@ div.firstSectionSport {
 	width: 150px;
 	background: #889e81;
 	border-radius: 10px;
+	margin-top: 5%;
 }
 
 .secondSectionSport {
@@ -227,9 +227,8 @@ div.firstSectionSport {
 .imgsport {
 	width: 40%;
 	border-radius: 10px;
-	margin-top: 30px;
+	margin-top: 5%;
 	margin-bottom: 50px;
-
 	-webkit-transform: scale(1.25);
 	transform: scale(1.25);
 	-webkit-transition: .3s ease-in-out;
@@ -986,8 +985,8 @@ h4{
 
 	.divSectionSports {
 		display: flex;
-		flex-direction: row;
 		justify-content: center;
+		flex-wrap: wrap;
 	}
 
 	.secondArticleSport {
