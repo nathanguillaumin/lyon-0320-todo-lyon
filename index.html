@@ -29,16 +29,14 @@
             </nav>
         </header>
         
-        <main>
-            <section>
+        <main class="mainIndex">
+            <article id="sloganArticle">
+                <h2 class="titleSlogan">Be wild, be Lyon</h2>
+                <img id="sloganImg" src="https://images.unsplash.com/photo-1537015125382-74e1f1c99ac4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="image slogan">
+            </article>
 
-                <h2 class="title_slogan">Be wild, be Lyon</h2>
-                <img id="slogan" src="https://i.imgur.com/tQ7Pepz.jpg" alt="image slogan">
-            </section>
-
-            <!--paragraphe d'introduction-->
-            <section class="introduction">
-                <h2>Bienvenue dans la capitale des Gaules !</h2>
+            <section class="introductionBloc">
+                <h2 id="titleIntro">Bienvenue dans la capitale des Gaules !</h2>
                 <p class="parIntro">Pour vous aider à organiser votre séjour à Lyon, nous vous proposons des idées d'événements incontournables:
                     <br>
                     capital gastronomique, centre culturel, événements internationaux, paysage entre mer et montagne..
@@ -46,15 +44,10 @@
                     <br>
                     Alors ? Partant pour une découverte ?
                 </p>
-
             </section>
             
            <section id="Categories">
                 <h2 class="categoryTitle">À Lyon je veux...</h2>
-                <aside class="weatherIframe">
-                    <script src='http://www.meteofrance.com/mf3-rpc-portlet/rest/vignettepartenaire/691230/type/VILLE_FRANCE/size/PAYSAGE_VIGNETTE'></script>
-                </aside>
-
                 <div class="articles">
 
                     <div class="link-container img-container">
@@ -100,13 +93,17 @@
                     </div>
                 </div>
 
-                <div class="bubble bubble-text">
-                    <p id="text-bubble"> Notre petit conseil : armez-vous de vos appareils photos et partagez votre expérience </p>
-                </div>
+                <article class="adviceActivities">
+                    <div class="bubble bubble-text">
+                        <p id="text-bubble"> Notre petit conseil : armez-vous de vos appareils photos et partagez votre expérience </p>
+                    </div>
+                </article>
+
+                <article class="weatherIframe">
+                    <script src='http://www.meteofrance.com/mf3-rpc-portlet/rest/vignettepartenaire/691230/type/VILLE_FRANCE/size/PAYSAGE_VIGNETTE'></script>
+                </article>
             </section>
 
-
-             <!--Formulaire de contact -->
             <section id="Contact">
                 <h2 class="contact-h">Contactez-nous</h2>
                 <form class="form-M">
@@ -130,10 +127,10 @@
                             <div>
                                 <label for="object"></label>
                                 <select name="object" id="object">
-                                    <option>j'ai besoin d'un renseignement</option>
-                                    <option>Je rencontre unproblème</option>
+                                    <option>J'ai besoin d'un renseignement</option>
+                                    <option>Je rencontre un problème</option>
                                     <option>Je souhaite proposer une activité</option>
-                                    <option>others</option>
+                                    <option>Autre</option>
                                 </select>
                             </div>
 

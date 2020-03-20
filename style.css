@@ -258,13 +258,56 @@ main
 {
 	background-color: #e5e4cc;
 	margin: 0px;
+	padding: 0;
 }
 
-p
-{
+/* Slogan section  */
+
+#sloganArticle {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#sloganImg {
+	width: 80%;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #889e81;
+}
+
+/* Section slogan - Introduction */
+
+.titleSlogan {
 	font-family: 'Pacifico', cursive;
+	color: #e6a157;
+	font-size: 48px;
 }
 
+#titleIntro {
+	font-family: 'Pacifico', cursive;
+	color: #e6a157;
+	font-size: 32px;
+}
+
+.introductionBloc {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.parIntro {
+	font-family: 'Bellota', cursive;
+	width: 80%;
+	text-align: center;
+	border: 1px solid #889e81;
+	border-radius: 10px;
+	padding: 10px 10px;
+	background:#bac7a7; 
+	color: black; 
+	padding:7px 15px;  
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
 
 /* Category section - title implementation */
 
@@ -282,7 +325,9 @@ p
 .weatherIframe
 {
 	display: flex;
-	justify-content: flex-end;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	padding-bottom: 20px;
 	padding-right: 20px;
 }
@@ -325,7 +370,7 @@ p
 .link-container:hover
 {
 	height:auto;
-  	background-color:#e6a157;
+  	background-color:#889e81;
   	transition:all 0.8s;
   	position: relative;
   	transform: scale(1.1);
@@ -366,20 +411,28 @@ visibility: visible;
 
 /* "Ville culturelle" section implementation */
 
+.adviceActivities {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60%;
+	margin-left: 20%;
+}
+
 .bubble
 {
-	margin: 0 auto;
+	margin: 5% 5%;
 	padding-top: 50px;
 	padding-bottom: 50px;
+	margin-top: 5%;
 }
 
 .bubble-text
 {
 	background:#bac7a7; 
-	color: solid black; 
+	color: black; 
 	padding:7px 15px; 
 	border-radius:3px; 
-	width:350px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -394,6 +447,7 @@ visibility: visible;
 .bubble-text p
 {
 	text-align: center;
+	font-family: 'Bellota';
 }
 
 
@@ -860,11 +914,15 @@ p
 	padding-right:35px;
 	padding-top:35px;
 	padding-bottom:10px;
-	width: 360px;
+	width: 80%;
     margin-top:10px;
     border-style: solid;
     border-radius: 10px;
 	border-color: gray;
+}
+
+fieldset {
+	width: 70%;
 }
 
 fieldset legend{
@@ -882,7 +940,8 @@ fieldset legend{
 	width:100%;
 	box-sizing: border-box;
     border: 2px solid rgb(204, 204, 175);
-    padding-left: 50px;
+	padding-left: 50px;
+	font-family: 'Pacifico', cursive;
 }
 
 div select{
@@ -901,7 +960,8 @@ textarea{
     padding-left: 50px;
     color:#3c3c3c;
     font-weight:500;
-    box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Pacifico', cursive;
 }
 
 
@@ -1013,25 +1073,4 @@ h4{
 
 }
 
-/* Section Slogan */
 
-#slogan {
-	border-radius: 10px;
-	max-width: 95%;
-	display: block;
-	margin-left: auto;
-  	margin-right: auto;
-  	max-height: 330px;
-  	box-shadow: 5px 5px 2px #BAC7A7;
-}
-
-.title_slogan {
-	font-family: 'Pacifico', cursive;
-	text-align: center;
-	color: #e6a157;
-	font-size: 36px;
-}
-
-.parIntro {
-	font-family: 'Bellota', cursive;
-}
