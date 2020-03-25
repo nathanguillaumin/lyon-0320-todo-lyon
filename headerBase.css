@@ -1,0 +1,88 @@
+/***************************
+	HEADER - to be uploaded on every page
+***************************/
+
+header {
+	background: #889e81;
+	display: flex;
+	border-bottom: 2px #e6a157 solid;
+}
+
+.navHeader {
+	width: 100%;
+	display: flex;
+}
+
+.ulHeader {
+	display: flex;
+	align-items: flex-end;
+	width: 100%;
+	margin-left: 7%;
+	padding-top: 20px;
+	margin-bottom: 10px;
+}
+
+.liHeader {
+	list-style: none;
+	font-family: 'Bellota', cursive;
+	color: #e5e4cc;
+	margin-left: 5%;
+}
+
+.liHeader a {
+	color: #e5e4cc;
+	text-decoration: none;
+	line-height: 40px;
+}
+
+.liHeader a:hover {
+	color: #e6a157;
+}
+
+.mainTitleHeader {
+	position: absolute;
+	left: 40%;
+	font-family: 'Pacifico', cursive;
+	color: #e6a157;
+	margin-top: 0;
+}
+
+
+.logoHeader {
+	margin-left: 10%;
+	margin-top: 5%;
+	width: 100px;
+	height: 100px;
+}
+
+/***************************
+	Responsive HEADER - Desktop version
+***************************/
+
+@media only screen and (max-width: 800px) {
+	nav .ulHeader {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.ulHeader {
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+	margin-right: 80px;
+	padding-top: 5px;
+}
+
+	.logoHeader {
+		position: absolute;
+		margin-left: 6%;
+		margin-top: 5%;
+		width: 100px;
+		height: 100px;
+	}
+
+	.mapSports {
+		margin-bottom: 20px;
+	}
+}

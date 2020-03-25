@@ -1,92 +1,139 @@
-/***************************
-	HEADER - to be uploaded on every page
-***************************/
+/****************************
+	HEADER - to be uploaded on every page 
+*****************************/
 
-header {
-	background: #889e81;
-	display: flex;
-	border-bottom: 2px #e6a157 solid;
+a
+{
+  color:#e6a157;
+  text-decoration:none;
+  font-family: 'Pacifico', cursive;
 }
 
-.navHeader {
-	width: 100%;
-	display: flex;
+.menu nav > * {
+	text-decoration:none;
 }
 
-.ulHeader {
-	display: flex;
-	align-items: flex-end;
-	width: 100%;
-	margin-left: 7%;
-	padding-top: 20px;
-	margin-bottom: 10px;
+.material-icons
+{
+  font-size:24px;
+  margin-right:12px;
+  vertical-align:text-bottom;
 }
 
-.liHeader {
-	list-style: none;
-	font-family: 'Bellota', cursive;
-	color: #e5e4cc;
-	margin-left: 5%;
+.menu
+{
+  background:#889e81;
+  color:#e6a157;
+  height:100px;
+  position:relative;
+  height: 10%;
 }
 
-.liHeader a {
-	color: #e5e4cc;
-	text-decoration: none;
-	line-height: 40px;
+.menu .title
+{
+  font-size:30px;
+  font-weight:bold;
+  line-height:50px;
+  padding:0 20px;
+  font-family: 'Pacifico', cursive;
 }
 
-.liHeader a:hover {
-	color: #e6a157;
+.logoHeader {
+	width: 150px;
+	height: 150px;
+	position: relative;
+	top: 15px;
+	left: 15px;
+}
+
+.divMainTitleHeader {
+	position: absolute;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .mainTitleHeader {
-	position: absolute;
-	left: 40%;
+	font-family: 'Pacifico', cursive;
+	font-size: 56px;
+}
+
+.menu nav
+{
+  background:inherit;
+  font-size:18px;
+  font-weight:bold;
+  height:0;
+  overflow:hidden;
+  transition:height .2s;
+  margin-top: 30px;
+}
+
+.menu nav > *
+{
+  display:block;
+  letter-spacing:1px;
+  line-height:2.5;
+  padding:0 20px;
+  width:100%;
+}
+
+.menu nav input
+{
+  background:rgba(0,0,0,.2);
+  border:none;
+  color:#e6a157;
+}
+
+.menu .burger
+{
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  color:inherit;
+  cursor:pointer;
+  font-family:'Material Icons';
+  font-size:70px;
+  line-height:50px;
+  margin:0;
+  outline:0;
+  padding:0;
+  position:absolute;
+  text-align:center;
+  top:60px;
+  right:50px;
+  width:50px;
+}
+
+.searchHeader {
+	height: 30px;
+}
+
+.menu .burger:before
+{
+  content:'menu';
+}
+
+.menu .burger:checked:before
+{
+  content:'close';
+}
+
+.menu .burger:checked + nav
+{
+	height: calc(40vh - 50px);
+}
+
+::placeholder {
 	font-family: 'Pacifico', cursive;
 	color: #e6a157;
-	margin-top: 0;
+	font-size: 16px;
 }
 
 
-.logoHeader {
-	margin-left: 10%;
-	margin-top: 5%;
-	width: 100px;
-	height: 100px;
-}
 
-/***************************
-	Responsive HEADER - Desktop version
-***************************/
-
-@media only screen and (max-width: 800px) {
-	nav .ulHeader {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	
-	.ulHeader {
-	flex-direction: column;
-	align-items: center;
-	margin-top: 50px;
-	margin-right: 80px;
-	padding-top: 5px;
-}
-
-	.logoHeader {
-		position: absolute;
-		margin-left: 6%;
-		margin-top: 5%;
-		width: 100px;
-		height: 100px;
-	}
-
-	.mapSports {
-		margin-bottom: 20px;
-	}
-}
-
+Resources
 
 /****************************
 	FOOTER - to be uploaded on every page 
@@ -101,10 +148,6 @@ body {
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
-}
-
-a {
-	text-decoration: none;
 }
 
 footer {
@@ -144,7 +187,7 @@ footer {
 }
 
 .texteFooter {
-	font-family: 'Bellota', cursive;
+	font-family: 'Pacifico', cursive;
 	font-size: 16px;
 	color: #e5e4cc;
 }
@@ -322,15 +365,13 @@ main
 
 /* Weather iFrame implementation*/
 
-.weatherIframe
-{
+.widgetMeteo {
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding-bottom: 20px;
-	padding-right: 20px;
+	margin: 0 auto;
 }
+
 
 /* Articles section implementation */
 
@@ -444,10 +485,14 @@ visibility: visible;
 	position: absolute;
 }
 
-.bubble-text p
+.bubble-text ul
 {
 	text-align: center;
 	font-family: 'Bellota';
+}
+
+.bubble-text ul li {
+	text-align: left;
 }
 
 
@@ -488,6 +533,23 @@ div.firstSectionSport {
 	height: 700px;
  }
 
+ #titleFirstSection {
+	display: inline-block;
+	width: 100%;
+	height: 80px;
+	background: #889e81;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+	font-family: 'Pacifico', cursive;
+ }
+
+ #titleFirstSection:hover {
+	 color: #e6a157;
+ }
+
 
 /* Articles on indoor and outdoor sports - 2nd section */
 
@@ -511,15 +573,11 @@ div.firstSectionSport {
 
 .secondSectionSport {
 	width: 100%;
-	
 	border: 2px #889e81 solid;
 	border-radius: 10px;
 	background: #e5e4cc;
 }
 
-.blocUnderSecondTitle {
-	margin-top: 40px;
-}
 
 .articleSport {
 	display: flex;
@@ -558,8 +616,6 @@ div.firstSectionSport {
 #mainTitleSport {
 	text-align: center;
 	background-color: #889e81;
-	height: 10%;
-	padding-bottom: 3%;
 }
 
 #mainTitleSport:hover {
@@ -581,6 +637,16 @@ div.firstSectionSport {
 
 .secondTitleDailySport:hover, .secondTitleSport:hover {
 	color: #e6a157;
+}
+
+.toKnow {
+	background: #889e81;
+	border-radius: 5px;
+    height: 40px;
+	width: 150px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .descriptionSport {

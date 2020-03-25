@@ -3,30 +3,33 @@
     
     <head>
         <title>ToDoLyon</title>
-        <meta name="Description" content="Site touristique répertoriant certaines
-        activités sur Lyon et ses alentours."/>
+        <meta name="description" content="Touristic website listing all activities in Lyon and its region."/>
         <meta charset="UTF-8"/>
-        <meta name="authors" content="Best equip">
+        <meta name="authors" content="ToDoLyon team">
         <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Bellota&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Bellota&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="https://i.imgur.com/VJXgJpU.png">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
     </head>
     <body>
         <header>
-            <div>
-                <a href=#><img src="https://i.imgur.com/d2eEvLw.png" alt="Logo_TDL"  class="logoHeader"></a>
+            <div class="menu">
+                <img src="https://i.imgur.com/Y5kKX8s.png" class="logoHeader" alt="logo ToDoLyon">
+                <div class="divMainTitleHeader">
+                    <span class="mainTitleHeader">ToDoLyon</span>
+                </div>
+                <input class="burger" type="checkbox">
+                <nav>
+                    <input class="searchHeader" type="search" placeholder="Rechercher...">
+                    <a href="index.html"><i class="material-icons">home</i>Trouver mon activité</a>
+                    <a href="#"><span class="material-icons">message</span>Contactez-nous !</a>
+                    <a href="#"><span class="material-icons">record_voice_over</span>On te parle de nous</a>
+                    <a href="#"><span class="material-icons">contact_support</span>Sondage</a>
+                </nav>
             </div>
-            <h1 class="mainTitleHeader">ToDoLyon</h1>
-            <nav class="navHeader">
-                <ul class="ulHeader">
-                    <li class="liHeader"><a href="#Categories" title="Trouver mon activité">Trouver mon activité</a></li>
-                    <li class="liHeader"><a href="#Contact" title="Contactez-nous, on ne mord pas !">Contactez-nous !</a></li>
-                    <li class="liHeader"><a href="#" title="Faites connaissance avec l'équipe !">On te parle de nous</a></li> <!-- Ajouter URL vers page "à propos" dans href -->
-                    <li class="liHeader"><a href="#" title="Que pensez-vous du site ?">Sondage</a></li> <!-- Ajouter URL vers page "sondage" dans href -->
-                </ul>
-            </nav>
         </header>
         
         <main class="mainIndex">
@@ -95,13 +98,26 @@
 
                 <article class="adviceActivities">
                     <div class="bubble bubble-text">
-                        <p id="text-bubble"> Notre petit conseil : armez-vous de vos appareils photos et partagez votre expérience </p>
+                            <ul id="text-bubble"><strong>Notre petit conseil :</strong>
+                                <li>Armez-vous de votre appareil photo</li>
+                                <li>Partagez votre expérience</li>
+                                <li>Découvrez la météo et choisissez votre activité en fonction !</li>
+                            </ul>
                     </div>
                 </article>
 
-                <article class="weatherIframe">
-                    <script src='http://www.meteofrance.com/mf3-rpc-portlet/rest/vignettepartenaire/691230/type/VILLE_FRANCE/size/PAYSAGE_VIGNETTE'></script>
-                </article>
+                <!-- widget meteo -->
+                <div id="widget_94a5ca09e5b06add51a605a10389c9ef" class="widgetMeteo">
+                    <span id="l_94a5ca09e5b06add51a605a10389c9ef"><a href="http://www.mymeteo.info/r/lyon_gb">consultez my-meteo.com</a></span>
+                    <script type="text/javascript">
+                        (function() {
+                            var my = document.createElement("script"); my.type = "text/javascript"; my.async = true;
+                            my.src = "https://services.my-meteo.com/widget/js_design?ville=237&format=horizontal&nb_jours=3&ombre1=000000&c1=ffffff&c2=a9a9a9&c3=ffffff&c4=ffffff&c5=ffffff&police=0&t_icones=2&fond=2&masque=3&x=472&y=150&d=0&id=94a5ca09e5b06add51a605a10389c9ef";
+                            var z = document.getElementsByTagName("script")[0]; z.parentNode.insertBefore(my, z);
+                            })();
+                    </script>
+            </div>
+    <!-- widget meteo -->
             </section>
 
             <section id="Contact">
