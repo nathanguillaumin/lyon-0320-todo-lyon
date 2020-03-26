@@ -452,6 +452,27 @@ visibility: visible;
 	text-decoration:none;
 }
 
+/***************************
+	Legal Notice page
+***************************/
+
+#introductionLegalNotice, #legalNoticeContent {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+#mainTitleLegalNotice, #secondTitleLegalNotice {
+	text-align: center;
+	font-family : 'Pacifico';
+}
+
+.paragraphLegalNotice {
+	font-family: 'Bellota', cursive;
+	text-align: justify;
+}
+
 /* "Ville culturelle" section implementation */
 
 .adviceActivities {
@@ -503,7 +524,7 @@ visibility: visible;
 ***************************/
 
 /* Carousel section (1st section) */
-#wholePage {
+.wholePage {
 	position: absolute;
     top: 180px;
 }
@@ -1199,5 +1220,4 @@ h4{
 
 
 }
-
-
+}
