@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+    <head>
+        <title>ToDoLyon</title>
+        <meta name="description" content="Touristic website listing all activities in Lyon and its region."/>
+        <meta charset="UTF-8"/>
+        <meta name="authors" content="ToDoLyon team">
+        <link rel="stylesheet" href="../css/style.css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bellota&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bellota&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="https://i.imgur.com/VJXgJpU.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+    </head>
+
+    <body>
+        <header>
+            <div class="menu">
+                <img src="https://i.imgur.com/Y5kKX8s.png" class="logoHeader" alt="logo ToDoLyon">
+                <div class="divMainTitleHeader">
+                    <a href="index.html"><span class="mainTitleHeader">ToDoLyon</span></a>
+                </div>
+                <input class="burger" type="checkbox">
+                <nav>
+                    <input class="searchHeader" type="search" placeholder="Rechercher...">
+                    <a href="index.html"><i class="material-icons">home</i>Trouver mon activité</a>
+                    <a href="#"><span class="material-icons">message</span>Contactez-nous !</a>
+                    <a href="#"><span class="material-icons">record_voice_over</span>On te parle de nous</a>
+                    <a href="#"><span class="material-icons">contact_support</span>Sondage</a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="wholePage">
+            <main>
+
+                <section id="Contact">
+                    <h2 class="contact-h">Contactez-nous</h2>
+                    <form class="form-M">
+                        <fieldset>
+                            <legend>Vos coordonnées</legend>
+
+                                <div>
+                                    <label class="Champ-O" for="email">*</label>
+                                    <input class="int" type="email" id="email" name="email" placeholder="Votre mail" required/>
+                                </div>
+
+                                <div>
+                                    <label class="Champ-O" for="nom">*</label>
+                                    <input class="int" type="text" id="nom" name="nom" placeholder="Votre nom" required/>
+                                </div>
+                        </fieldset>
+        
+                        <fieldset>
+                            <legend>Des questions ?</legend>
+
+                                <div>
+                                    <label for="object"></label>
+                                    <select name="object" id="object">
+                                        <option>J'ai besoin d'un renseignement</option>
+                                        <option>Je rencontre un problème</option>
+                                        <option>Je souhaite proposer une activité</option>
+                                        <option>Autre</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label for="message"></label>
+                                    <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+                                </div>
+                                    
+                                <div>
+                                    <label for="pub">Je souhaite recevoir la newsletters</label>
+                                    <input class="int" type="checkbox" id="pub" name="pub" checked/>
+                                
+                                </div>
+        
+                                <div>
+                                    <button id="button-M">Envoyer !</button>
+                                </div>
+
+                        </fieldset>
+                            <h4>Les champs marqués par "*" sont obligatoires.</h4>
+                    </form>
+
+                
+                </section>
+
+            </main>
+
+        <footer>
+
+            <div id="firstDivFooter">
+                <a href=index.html><img src="https://i.imgur.com/d2eEvLw.png" alt="Logo_TDL" id="logoFooter"></a>
+            </div>
+
+            <nav class="navListeFooter">
+                <ul class="listeFooter">
+                    <li><a href="index.html" title="lien vers le menu" class="texteFooter">Trouver mon activité</a></li>
+                    <li><a href="contact.html" title="lien vers le sondage" class="texteFooter">Contactez-nous</a></li>
+                    <li><a href="legalnotice.html" title="lien vers les mentions légales" class="texteFooter">Mentions légales</a></li>
+                    <li><a href="FAQ.html" title="lien vers la FAQ" class="texteFooter">FAQ</a></li>
+
+                </ul>
+            </nav>
+            <div id="thirdcolumn">
+                <nav id="navSocialNetworks">
+                    <h3 id="followUs" class="texteFooter">Nous suivre:</h3>
+                    <ul class="socialNetworks">
+                        <li><a href="https://twitter.com" title="lien vers notre profil Twitter"><img class="twitter" src="https://www.bassin-arcachon.com/wp-content/uploads/2017/02/logo-twitter-bleu.png" alt="Logo_Twitter"></a></li>
+                        <li><a href="https://facebook.com" title="lien vers notre profil Facebook"><img class="facebook" src="https://cdn.icon-icons.com/icons2/159/PNG/256/facebook_22567.png" alt="Logo_FB"></a></li>
+                        <li><a href="https://instagram.com" title="lien vers notre profil instagram"><img class="instagram" src="https://www.followerspascher.com/wp-content/uploads/2016/06/1466927228_social-instagram-new-circle.png" alt="Logo_instagram"></a></li>
+                    </ul>
+                </nav>
+
+                <div id="research">
+                    <form>
+                        <input class="caseFooter" type="search" id="site-search" name="q" aria-label="Search through site content">
+                        <button type="submit" class="caseFooter">Rechercher</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/sport.js"></script>
+</body>
+</html>

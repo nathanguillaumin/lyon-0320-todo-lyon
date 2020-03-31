@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+    <head>
+        <title>ToDoLyon</title>
+        <meta name="description" content="Touristic website listing all activities in Lyon and its region."/>
+        <meta charset="UTF-8"/>
+        <meta name="authors" content="ToDoLyon team">
+        <link rel="stylesheet" href="../css/style.css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bellota&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bellota&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="https://i.imgur.com/VJXgJpU.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+    </head>
+        
+    <body>
+            <header>
+                <div class="menu">
+                    <img href="index.html" src="https://i.imgur.com/Y5kKX8s.png" class="logoHeader" alt="logo ToDoLyon">
+                    <div class="divMainTitleHeader">
+                        <a href="index.html"><span class="mainTitleHeader">ToDoLyon</span></a>
+                    </div>
+                    <input class="burger" type="checkbox">
+                    <nav>
+                        <input class="searchHeader" type="search" placeholder="Rechercher...">
+                        <a href="index.html"><i class="material-icons">home</i>Trouver mon activité</a>
+                        <a href="#"><span class="material-icons">message</span>Contactez-nous !</a>
+                        <a href="#"><span class="material-icons">record_voice_over</span>On te parle de nous</a>
+                        <a href="#"><span class="material-icons">contact_support</span>Sondage</a>
+                    </nav>
+                </div>
+            </header>
+        
+        <div class="wholePage">
+            <main>
+                <div id="slider" class="firstSectionSport">
+                    <details class="modal">
+                        <summary id="titleFirstSection" class="modal-trigger">Découvrez les principaux évènements sportifs à Lyon:</summary>
+                        <div class="modal-content">
+                            <h2 id="noteDates">Note les dates dans ton agenda:</h2>
+                            <ul>
+                                <li><strong><i class="material-icons">directions_bike</i>Lyon Free Bike:</strong> 6 septembre 2020 <a href="https://www.lyonfreebike.com/"><button>Clique ici pour t'inscrire !</button></a></li>
+                                <li><strong><i class="material-icons">directions_run</i>Lugdunum Roller Contest:</strong> 19 septembre 2020 <a href="https://lugdunumcontest.com/"><button>Clique ici pour t'inscrire !</button></a></li>
+                                <li><strong><i class="material-icons">directions_run</i>Run in Lyon:</strong> 4 octobre 2020 <a href="https://www.runinlyon.com/fr"><button>Clique ici pour t'inscrire !</button></a></li>
+                                <li><strong><i class="material-icons">directions_run</i>Lyon Urban Trail:</strong> 1 novembre 2020 <a href="https://www.lyonurbantrail.com/"><button>Clique ici pour t'inscrire !</button></a></li>
+                            </ul>
+                        </div>
+                    </details>
+                    <figure>
+                        <a href="https://www.lyonfreebike.com/"><img src="../images/lyonfreebike.jpeg" alt="lyonfreebike"></a>
+                        <a href="https://lugdunumcontest.com/"><img src="../images/lugdunumcontest.jpeg" alt="lugdunumcontest"></a>
+                        <a href="https://www.runinlyon.com/fr"><img src="../images/resizedruninlyon.jpg" alt="runinlyon"></a>
+                        <a href="https://www.lyonurbantrail.com/"><img src="../images/lyonurbantrail.jpeg" alt="lyonurbantrail"></a>
+                    </figure>
+                </div>
+
+                <div class="divMainTitleSport"><h1 id="mainTitleSport">Mon sport au quotidien</h1></div>
+                
+                    <section class="divSectionSports">
+                            <article class="blocSport blocUnderSecondTitle">
+                                <h3 class="thirdTitleSport">Les salles de sport à Lyon</h3>
+                                <a class="linkImgSport" href="https://www.masalledesport.com/salle-de-sport,a,lyon?page=1"><img class="imgsport" src="../images/fitnessroom.jpeg" alt="salles de sport à Lyon"></a>
+                                <button id="toKnowFitness" class="toKnow">En savoir plus</button>
+                                <div id="textToUploadFitness" class="box-body collapsed">
+                                    Nouveau dans la capitale des Gaules, ou simplement enfin décidé à vous remettre au sport ? 
+                                    A Lyon, vous n'aurez pas de soucis pour trouver la salle de sport adéquate alliant appareils de fitness, cours en groupe (yoga, renforcement, arts martiaux...) et détente, et ce quel que soit votre arrondissement, ou votre quartier.  
+                                    Que vous soyez résident de la Presqu’Île, ou que vous viviez plutôt sur les Pentes de la Croix Rousse, ou encore, que vous travailliez près de la Part Dieu ou de Confluence, de nombreux clubs vous accueillent et vous permettent de vivre l’expérience fitness de votre choix.
+                                </div>
+                            </article>
+
+                            <article class="blocSport">
+                                <h3 class="thirdTitleSport">Les arts martiaux à Lyon</h3>
+                                <a class="linkImgSport" href="https://www.pagesjaunes.fr/annuaire/lyon-69/arts-martiaux-clubs"><img class="imgsport" src="../images/martialarts.jpeg" alt="arts martiaux à Lyon"></a>
+                                <button id="toKnowMartialArts" class="toKnow">En savoir plus</button>
+                                <div id="textToUploadMartialArts" class="box-body collapsed">
+                                    Lyon ne manque pas de clubs et de salles d’arts martiaux et votre choix devra certainement se faire selon votre niveau et votre expérience. 
+                                    En premier lieu, nous citerons le Club du Rhône qui a su évoluer en ajoutant un large éventail de cours d’arts martiaux tels que Jeet Kun Do, des boxes, du MMA pour les plus motivés et du self-défense pour apprendre à se défendre. 
+                                    Vous êtes plutôt expert et souhaiter vous perfectionner en Kung-Fu, Kick-Boxing ou Sanda-Jujitsu, venez vous inscrire au club Hungsing Kungfu !
+                                </div>
+                            </article>
+
+                            <article class="blocSport">
+                                <h3 class="thirdTitleSport">Les salles d'escalade à Lyon</h3>
+                                <a class="linkImgSport" href="https://www.grimper.com/salle-escalade-hub-lyon"><img class="imgsport" src="../images/climbing.jpeg" alt="escalade à Lyon"></a>
+                                <button id="toKnowClimbing" class="toKnow">En savoir plus</button>
+                                <div id="textToUploadClimbing" class="box-body collapsed">
+                                    Le nouveau lyonnais que vous êtes sera censé savoir que la ville est situé des Alpes à proximité de nombreux lieux dont sont friands les experts en escalade. 
+                                    Commençant par le département de l’Ain et ses falaises du Bugey, nous pouvons également citer le Vercors et plus particulièrement Presles, ce serait peut-être une bonne idée de se mettre à l’escalade ! 
+                                    Et pour cela, Lyon compte pas moins de trois salles d'escalade réparties sur toute l'agglomération qui rassemble un large public de grimpeurs. Avec des salles de 1000 (MRoc) à 2400m2 (Climb Up Gerland), nous vous promettons que vous vous régalerez.
+                                </div>
+                            </article>
+
+                            <article class="blocSport">
+                                <h3 class="thirdTitleSport blocSousSecondTitle">Courir à Lyon</h3>
+                                <a class="linkImgSport" href="https://www.masalledesport.com/salle-de-sport,a,lyon?page=1"><img class="imgsport" src="../images/running.jpeg" alt="escalade à Lyon"></a>
+                                <button id="toKnowRunning" class="toKnow">En savoir plus</button>
+                                <div id="textToUploadRunning" class="box-body collapsed">
+                                    Avec des collines et des grands parcs, ainsi que des espaces naturels proches de la ville, Lyon offre aux joggeurs amateurs ou confirmés de multiples possibilités de pratiquer leur activité préférée. 
+                                    Si le Parc de la Tête d'Or -et son tour de 3.8 km- reste le lieu privilégié des joggers du centre-ville, de nombreux coureurs lyonnais empruntent régulièrement les berges du Rhône ou de Saône. 
+                                    Dans l'agglomération, d'autres parcs permettent également de courir en plein air, citons par exemple le Parc de Parilly, celui de la Feyssine ou de Lacroix-Laval.
+                                </div>
+                            </article>
+
+                            <article class="blocSport">
+                                <h3 class="thirdTitleSport">Les sports collectifs</h3>
+                                <a class="linkImgSport" href="https://sport-u-auvergnerhonealpes.com/index.php/sports-co-lyon/"><img class="imgsport" src="../images/teamsports.jpeg" alt="sports collectifs"></a>
+                                <button id="toKnowTeamSports" class="toKnow">En savoir plus</button>
+                                <div id="textToUploadTeamSports" class="box-body collapsed">
+                                    Vous aimez la pratique du sport en groupe et les sports collectifs ? Cela tombe bien, à Lyon vous allez être servi. 
+                                    Quel que soit votre niveau, les clubs de quartier sont nombreux. En football, le Football Croix Roussien, le Football Club de Gerland ou l’Association Sportive de Montchat pourront vous accueillir. 
+                                    En rugby, l’EMS Bron, le LOU, ou le Rugby CO sont parmis les dizaines de club présent sur l’agglomération. Pour tous les autres sports, cliquez ici.
+                                </div>
+                            </article>
+                            <article class="blocSport blocRandonnées">
+                                <h3 class="thirdTitleSport">Terrains de sports et randonnées</h3>
+                                <a class="linkImgSport" href="https://www.lyon.fr/sport/la-pratique-du-sport-au-quotidien/skate-parcs-roller-et-terrains-outdoor"><img class="imgsport" src="../images/hiking.jpeg" alt="terrains de sport et randonnées"></a>
+                                <button id="toKnowSportsGround" class="toKnow">En savoir plus</button>
+                                <div id="textToUploadSportsGround" class="box-body collapsed">
+                                    La ville gère et entretient une cinquantaine de terrains de proximité, principalement dédié aux sports collectifs. 
+                                    Elle est également à l'origine de plusieurs skate parcs, réservés aux adeptes de la glisse urbaine sous toutes ses formes (trottinettes, rollers, skate, BMX...).
+                                </div>
+                            </article>
+                    </section>
+
+                    <div class="divMainTitleSport divToHide"><h1 id="mainTitleSport">Informations pratiques</h1></div>
+
+                <section class="titlesPraticalInfo">
+                    <div>
+                        <h2 class="secondTitleSport">Carte interactive des sports à Lyon</h2>
+                    </div>
+                    <div>
+                        <h2 class="secondTitleSport">Découvre la météo avant de choisir ton activité !</h2>
+                    </div>
+                </section>
+
+                <section class="mapSports">
+                    <div id="googleMap">
+                        <iframe src="https://www.google.com/maps/d/embed?mid=12x_D6DIftppN-RsxoXYsNGhsFICUK3LX" width="640" height="480"></iframe>
+                    </div>
+                    <div id="widgetMeteo">
+                        <a target="_blank" href="https://hotelmix.fr/weather/lyon-18325"><img src="https://w.bookcdn.com/weather/picture/4_18325_1_3_518a11_200_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=581&anc_id=60927"  alt="booked.net"/></a><!-- weather widget end -->
+                        <!-- widget meteo -->
+                    </div>
+                </section>
+
+                <div class="contentModalSondage blocSport">
+                    <h2>Vous souhaitez nous aider à améliorer notre offre?</h2>
+                    <img src="https://i.imgur.com/Y5kKX8s.png" class="logoHeader" alt="logo ToDoLyon">
+                        <!-- Trigger/Open The Modal -->
+                        <button id="myBtn" class="toKnow">Répondre au sondage</button>
+                        <!-- The Modal -->
+                        <div id="myModal" class="modalSondage">
+                            <!-- Modal content -->
+                            <div class="modal-content modalBoxSondage">
+                                <span class="close">&times;</span>
+                                <form class="formSondage" method="post" action="traitement.php">
+                                    <h2 id="titreSondage">ToDoLyon vous remercie de tout coeur pour votre contribution !</h2>
+                                    <p class="paragraphSondage">
+                                        Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :<br />
+                                        <input type="radio" name="age" value="moins15" id="moins15" /> <label for="moins15">Moins de 15 ans</label><br />
+                                        <input type="radio" name="age" value="medium15-25" id="medium15-25" /> <label for="medium15-25">15-25 ans</label><br />
+                                        <input type="radio" name="age" value="medium25-40" id="medium25-40" /> <label for="medium25-40">25-40 ans</label><br />
+                                        <input type="radio" name="age" value="plus40" id="plus40" /> <label for="plus40">Encore plus vieux que ça ?!</label>
+                                    </p>
+                                </form>
+                                <form class="formSondage">
+                                    <p class="paragraphSondage">
+                                        Par quel thématique d'activités êtes-vous intéressé? <br />
+                                        <input type="radio" name="age" value="cinema" id="cinema" /> <label for="cinema">Cinéma</label><br />
+                                        <input type="radio" name="age" value="gastronomie" id="gastronomie" /> <label for="gastronomie">Gastronomie</label><br />
+                                        <input type="radio" name="age" value="sport" id="sport" /> <label for="sport">Sport</label><br />
+                                        <input type="radio" name="age" value="musique" id="musique" /> <label for="musique">Musique</label><br />
+                                        <input type="radio" name="age" value="culture" id="culture" /> <label for="culture">Culture</label><br />
+                                        <input type="radio" name="age" value="nature" id="nature" /> <label for="nature">Nature</label><br />
+                                    </p>
+
+                                    <div class="boxQuestionActivities">
+                                        <label for="object">Quelles activités nous recommandez-vous d'ajouter sur notre site?</label>
+                                        <select name="object" id="object">
+                                            <option>Cinéma</option>
+                                            <option>Gastronomie</option>
+                                            <option>Sport</option>
+                                            <option>Musique</option>
+                                            <option>Culture</option>
+                                            <option>Nature</option>
+                                        </select>
+                                    </div>
+    
+                                    <div class="messageSondage">
+                                        <label for="message"></label>
+                                        <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+                                    </div>
+
+                                    <input type="submit" value="Envoyer" class="toKnow"/>
+
+                                 </form>
+                                 
+                            </div>
+                        </div>
+                </div>
+                
+            </main>
+
+            <footer>
+
+                <div id="firstDivFooter">
+                    <a href=#><img src="https://i.imgur.com/d2eEvLw.png" alt="Logo_TDL" id="logoFooter"></a>
+                </div>
+
+                <nav class="navListeFooter">
+                    <ul class="listeFooter">
+                        <li><a href="index.html" title="lien vers le menu" class="texteFooter">Trouver mon activité</a></li>
+                        <li><a href="contact.html" title="lien vers le sondage" class="texteFooter">Contactez-nous</a></li>
+                        <li><a href="legalnotice.html" title="lien vers les mentions légales" class="texteFooter">Mentions légales</a></li>
+                        <li><a href="FAQ.html" title="lien vers la FAQ" class="texteFooter">FAQ</a></li>
+
+                    </ul>
+                </nav>
+                <div id="thirdcolumn">
+                    <nav id="navSocialNetworks">
+                        <h3 id="followUs" class="texteFooter">Nous suivre:</h3>
+                        <ul class="socialNetworks">
+                            <li><a href="https://twitter.com" title="lien vers notre profil Twitter"><img class="twitter" src="https://www.bassin-arcachon.com/wp-content/uploads/2017/02/logo-twitter-bleu.png" alt="Logo_Twitter"></a></li>
+                            <li><a href="https://facebook.com" title="lien vers notre profil Facebook"><img class="facebook" src="https://cdn.icon-icons.com/icons2/159/PNG/256/facebook_22567.png" alt="Logo_FB"></a></li>
+                            <li><a href="https://instagram.com" title="lien vers notre profil instagram"><img class="instagram" src="https://www.followerspascher.com/wp-content/uploads/2016/06/1466927228_social-instagram-new-circle.png" alt="Logo_instagram"></a></li>
+                        </ul>
+                    </nav>
+
+                    <div id="research">
+                        <form>
+                            <input class="caseFooter" type="search" id="site-search" name="q" aria-label="Search through site content">
+                            <button type="submit" class="caseFooter">Rechercher</button>
+                        </form>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="../js/sport.js"></script>
+    </body>
+</html>

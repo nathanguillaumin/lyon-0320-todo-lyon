@@ -6,7 +6,7 @@
         <meta name="description" content="Touristic website listing all activities in Lyon and its region."/>
         <meta charset="UTF-8"/>
         <meta name="authors" content="ToDoLyon team">
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="../css/style.css" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Bellota&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Bellota&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
             <div class="menu">
                 <img src="https://i.imgur.com/Y5kKX8s.png" class="logoHeader" alt="logo ToDoLyon">
                 <div class="divMainTitleHeader">
-                    <span class="mainTitleHeader">ToDoLyon</span>
+                    <a href="index.html"><span class="mainTitleHeader">ToDoLyon</span></a>
                 </div>
                 <input class="burger" type="checkbox">
                 <nav>
@@ -108,17 +108,11 @@
                     </article>
 
                     <!-- widget meteo -->
-                    <div id="widget_94a5ca09e5b06add51a605a10389c9ef" class="widgetMeteo">
-                        <span id="l_94a5ca09e5b06add51a605a10389c9ef"><a href="http://www.mymeteo.info/r/lyon_gb">consultez my-meteo.com</a></span>
-                        <script type="text/javascript">
-                            (function() {
-                                var my = document.createElement("script"); my.type = "text/javascript"; my.async = true;
-                                my.src = "https://services.my-meteo.com/widget/js_design?ville=237&format=horizontal&nb_jours=3&ombre1=000000&c1=ffffff&c2=a9a9a9&c3=ffffff&c4=ffffff&c5=ffffff&police=0&t_icones=2&fond=2&masque=3&x=472&y=150&d=0&id=94a5ca09e5b06add51a605a10389c9ef";
-                                var z = document.getElementsByTagName("script")[0]; z.parentNode.insertBefore(my, z);
-                                })();
-                        </script>
-                </div>
-        <!-- widget meteo -->
+                    <div id="widgetMeteo">
+                    <a target="_blank" href="https://hotelmix.fr/weather/lyon-18325"><img src="https://w.bookcdn.com/weather/picture/4_18325_1_3_518a11_200_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=581&anc_id=60927"  alt="booked.net"/></a><!-- weather widget end -->
+                    <!-- widget meteo -->
+                    </div>
+
                 </section>
 
                 <section id="Contact">
@@ -177,16 +171,16 @@
 
             <footer>
 
-                <div>
+                <div id="firstDivFooter">
                     <a href=#><img src="https://i.imgur.com/d2eEvLw.png" alt="Logo_TDL" id="logoFooter"></a>
                 </div>
 
                 <nav class="navListeFooter">
                     <ul class="listeFooter">
                         <li><a href="index.html" title="lien vers le menu" class="texteFooter">Trouver mon activité</a></li>
-                        <li><a href="index.html" title="lien vers le sondage" class="texteFooter">Sondage</a></li>
+                        <li><a href="contact.html" title="lien vers le sondage" class="texteFooter">Contactez-nous</a></li>
                         <li><a href="legalnotice.html" title="lien vers les mentions légales" class="texteFooter">Mentions légales</a></li>
-                        <li><a href="#" title="lien vers la FAQ" class="texteFooter">FAQ</a></li>
+                        <li><a href="FAQ.html" title="lien vers la FAQ" class="texteFooter">FAQ</a></li>
 
                     </ul>
                 </nav>
